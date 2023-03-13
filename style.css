@@ -1,0 +1,220 @@
+/**
+ * Globals
+ */
+ :root {
+	/* Add theme colors */
+	--white: #FFF;
+	--black: #000;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 62.5%; /* To work with REM units */
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif; /* Change global font */
+	font-size: 1.6rem;
+    background-color: green; /* Testing stylesheet, just delete it */
+}
+
+h1 {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	display: block;
+	height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: var(--black);
+}
+
+a:hover, 
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+h2 {
+    /* Change styles */
+	font-size: 5rem; 
+	font-weight: 600;
+	line-height: 5.3rem;
+}
+
+p {
+    /* Change styles */
+	color: var(--black);
+	font-weight: 500;
+	font-size: 1.5rem; 
+	line-height: 2rem; 
+	text-align: justify;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+
+form button {
+	background-color: var(--black);
+	border-radius: .7rem;
+	color: var(--white);
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin: 4.5rem auto 0;
+	padding: 1.4rem 1.7rem;
+	width: 24rem;
+}
+
+form button:hover {
+	cursor: pointer;
+}
+
+form label {
+	color: var(--white);
+	display: block;
+	font-family: Arial, Helvetica, sans-serif; /* Change font here*/
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding-left: 2rem;
+	margin-bottom: 1.3rem;
+}
+
+@media (max-width: 520px) {
+	form label {
+		padding-left: 0;
+	}
+}
+
+form .fields-group {
+	display: flex;
+	column-gap: 1rem;
+}
+
+@media (max-width: 520px) {
+	form .fields-group {
+		flex-direction: column;
+	}
+}
+
+form .fields-group .input-group {
+	flex: 1;
+}
+
+form input,
+form textarea,
+form select {
+	border: .08rem solid rgba(255, 255, 255, 0.58);
+	border-radius: .7rem;
+	color: var(--white);
+	padding: 1.1rem 2.2rem;
+	width: 100%;
+}
+
+form select {
+	padding: 1rem 2.2rem;
+}
+
+form input::placeholder,
+form textarea::placeholder,
+form select::placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+form select {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+form select option {
+	color: var(--black);
+}
+
+.container {
+	max-width: 120rem;
+	margin: auto;
+}
+
+.container .row {
+	padding: 0 3rem;
+}
+
+/**
+* Helper classes
+*/
+
+.d-flex {
+	display: flex;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.text-white {
+	color: var(--white);
+}
+
+.text-black {
+    color: var(--dark)
+}
+
+/* Add more color helpers according to your theme */
+
+.font-400 {
+	font-weight: 400;
+}	
+.font-500 {
+	font-weight: 500;
+}	
+.font-600 {
+	font-weight: 600;
+}	
+.font-700 {
+	font-weight: 700;
+}	
+.font-900 {
+	font-weight: 900;
+}	
+
